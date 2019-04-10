@@ -24,4 +24,13 @@ class Song
     end
     return unique
   end
+  def self.genres
+    unique = []
+    @@genres.each do |y|
+      if !unique.include?(y)
+        unique << y
+      end
+    end
+    return unique
+  end
 end
