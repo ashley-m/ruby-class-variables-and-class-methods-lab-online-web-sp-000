@@ -33,4 +33,13 @@ class Song
     end
     return unique
   end
+  def self.genre_count
+    count = {}
+    self.genres.each do |x|
+      count[x] = 0
+    end
+    @@genres.each do |y|
+      count[y] += 1
+    end
+    return count
 end
