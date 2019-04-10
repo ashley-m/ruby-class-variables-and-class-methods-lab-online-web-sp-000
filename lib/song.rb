@@ -43,4 +43,14 @@ class Song
     end
     return count
   end
+  def self.artist_count
+    count = {}
+    self.artists.each do |x|
+      count[x] = 0
+    end
+    @@artists.each do |y|
+      count[y] += 1
+    end
+    return count
+  end
 end
