@@ -42,4 +42,5 @@ class Song
       count[y] += 1
     end
     return count
+  end
 end
