@@ -11,4 +11,8 @@ class Song
     @@artists << artist #if !@@artists.include?(artist)
     @@genres << genre #if !@@genres.include?(genre)
   end
+
+  def count
+    @@count
+  end
 end
